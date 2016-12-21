@@ -63,11 +63,11 @@ public class BubbleSort
             //iterate thru first to next-to-last element, comparing to next
             for( int i = 0; i < data.size()-1; i++ ) {
 
-                //if element at i > element at 1+1, swap
+                //if element at i > element at i+1, swap
                 if ( data.get(i).compareTo(data.get(i+1) ) > 0 ) 
                     data.set( i, data.set(i+1,data.get(i)) );   
                 
-                //System.out.println(data); //diag: show current state of list
+                System.out.println(data); //diag: show current state of list
             }
         }
     }//end bubbleSortV
