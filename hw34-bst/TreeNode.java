@@ -1,3 +1,8 @@
+// Clyde "Thluffy" Sinclair
+// APCS2 pd0
+// HW34 -- Algo as Data Structure
+// 2017-05-04
+
 /*****************************************************
  * class TreeNode
  * Implements a node for use in a binary tree.

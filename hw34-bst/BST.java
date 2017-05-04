@@ -1,6 +1,10 @@
+// Clyde "Thluffy" Sinclair
+// APCS2 pd0
+// HW34 -- Algo as Data Structure
+// 2017-05-04
+
 /*****************************************************
  * class BST
- * <<< skeleton >>>
  * Implementation of the BINARY SEARCH TREE abstract data type (ADT) 
  * A BST maintains the invariant that, for any node N with value V, 
  * L<V && V<R, where L and R are node values in N's left and right
