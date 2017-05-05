@@ -1,3 +1,8 @@
+// Clyde "Thluffy" Sinclair
+// APCS2 pd0
+// HW34 -- Algo as Data Structure
+// 2017-05-04
+
 /*****************************************************
  * class TreeNode
  * Implements a node for use in a binary tree.
@@ -7,6 +12,8 @@
 public class TreeNode 
 {
     //instance variables / attributes of a TreeNode:
+    int _cargo;     //this node's data
+    TreeNode _lt, _rt; //pointers to left, right subtrees
 
 
     /*****************************************************
@@ -16,7 +23,7 @@ public class TreeNode
      *****************************************************/
     TreeNode( int initValue )
     {
-	/*** YOUR IMPLEMENTATION HERE ***/
+	_cargo = initValue;
     }
           
 
@@ -27,7 +34,9 @@ public class TreeNode
      *****************************************************/
     TreeNode( int initValue, TreeNode initLeft, TreeNode initRight ) 
     {
-	/*** YOUR IMPLEMENTATION HERE ***/
+	this(initValue);
+	_lt = initLeft;
+	_rt = initRight;
     }
  
 
@@ -36,7 +45,7 @@ public class TreeNode
      *****************************************************/
     TreeNode getLeft() 
     {
-	/*** YOUR IMPLEMENTATION HERE ***/
+	return _lt;
     }
 
 
@@ -45,7 +54,7 @@ public class TreeNode
      *****************************************************/
     TreeNode getRight() 
     {
-	/*** YOUR IMPLEMENTATION HERE ***/
+	return _rt;
     }
 
 
@@ -54,7 +63,7 @@ public class TreeNode
      *****************************************************/
     int getValue() 
     {
-	/*** YOUR IMPLEMENTATION HERE ***/
+	return _cargo;
     }
 
 
@@ -63,7 +72,7 @@ public class TreeNode
      *****************************************************/
     void setLeft( TreeNode theNewLeft ) 
     {
-	/*** YOUR IMPLEMENTATION HERE ***/
+	_lt = theNewLeft;
     }
 
 
@@ -72,7 +81,7 @@ public class TreeNode
      *****************************************************/
     void setRight( TreeNode theNewRight ) 
     {
-	/*** YOUR IMPLEMENTATION HERE ***/
+	_rt = theNewRight;
     }
 
 
@@ -81,7 +90,7 @@ public class TreeNode
      *****************************************************/
     void setValue( int theNewValue ) 
     {
-	/*** YOUR IMPLEMENTATION HERE ***/
+	_cargo = theNewValue;
     }
  
 }//end class
