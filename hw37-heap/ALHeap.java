@@ -79,6 +79,9 @@ public class ALHeap
      * add(Integer) 
      * Inserts an element in the heap
      * Postcondition: Tree maintains heap property.
+     * Algo: 
+     * append new element to end of array, 
+     * "walk up" to position where it belongs
      *****************************************************/
     public void add( Integer addVal ) 
     { 
@@ -108,6 +111,10 @@ public class ALHeap
      * removeMin()  ---  means of removing an element from heap
      * Removes and returns least element in heap.
      * Postcondition: Tree maintains heap property.
+     * Algo: 
+     * swap val a front of array with last element
+     * remove last element
+     * "walk" new root down to position where it belongs
      *****************************************************/
     public Integer removeMin() 
     {
