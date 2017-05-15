@@ -124,7 +124,10 @@ class Ball
   //collision detection
   boolean isTouching( Ball other ) 
   {
-    return sqrt( (x - other.x) * (x - other.x) + (y - other.y) * (y - other.y) ) < rad + other.rad;
+    //return sqrt( (x - other.x) * (x - other.x) + (y - other.y) * (y - other.y) ) < rad + other.rad;
+    //more efficient equiv math expression:
+    return (x - other.x) * (x - other.x) + (y - other.y) * (y - other.y) 
+      < (rad + other.rad)*(rad + other.rad);
   }
 
 

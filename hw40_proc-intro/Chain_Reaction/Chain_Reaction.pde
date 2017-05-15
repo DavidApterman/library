@@ -20,6 +20,9 @@ boolean reactionStarted;
 //tasks to perform once, upon launch
 void setup() 
 {
+  //DIAGNOSTIC: lower frame rate from default 60fps to explore, troubleshoot...
+  //frameRate(10);
+  
   //set canvas size to 600x600 pixels
   size(600, 600);
 
